@@ -10,7 +10,7 @@ export function Topbar({ onMenu }: { onMenu: () => void }) {
   const initial = profile?.full_name?.trim()?.[0] ?? 'م'
 
   return (
-    <header className="sticky top-0 z-20 flex items-center justify-between border-b border-cream-300/70 bg-cream-50/80 px-4 py-3 backdrop-blur-md lg:px-6">
+    <header className="sticky top-0 z-30 flex items-center justify-between border-b border-cream-300/80 bg-cream-50/95 px-4 py-3 backdrop-blur-md shadow-xs lg:px-6">
       <button className="rounded-xl p-2 text-brand-600 hover:bg-cream-200 lg:hidden" onClick={onMenu}><Menu className="h-5 w-5" /></button>
       <div className="hidden items-center gap-1.5 rounded-full border border-gold-300/60 bg-gold-50 px-3 py-1 text-sm text-gold-800 lg:flex">
         <MapPin className="h-4 w-4" /> <b>{profile?.branch.name}</b>

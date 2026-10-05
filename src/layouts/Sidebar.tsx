@@ -13,7 +13,7 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
     <>
       {open && <div className="fixed inset-0 z-30 bg-brand-950/50 backdrop-blur-sm lg:hidden" onClick={onClose} />}
       <aside className={clsx(
-        'fixed inset-y-0 start-0 z-40 flex w-64 flex-col bg-gradient-to-b from-brand-900 to-brand-950 text-cream-200 shadow-xl transition-transform lg:static lg:translate-x-0',
+        'fixed inset-y-0 start-0 z-40 flex w-64 flex-col bg-gradient-to-b from-brand-900 to-brand-950 text-cream-200 shadow-xl transition-transform lg:sticky lg:top-0 lg:h-screen lg:max-h-screen lg:translate-x-0',
         open ? 'translate-x-0' : 'translate-x-full rtl:translate-x-full lg:!translate-x-0',
       )}>
         <div className="flex items-center justify-between border-b border-gold-500/20 px-4 py-5">
